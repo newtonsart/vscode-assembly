@@ -33,3 +33,10 @@ ext install DamianKoper.gdb-debug
 ```
 ### Json files
 You'll need to append the [tasks.json](https://github.com/newtonsart/visual-studio-assembly/blob/master/tasks.json) file and the [launch.json](https://github.com/newtonsart/visual-studio-assembly/blob/master/launch.json) files to your config files.
+
+### Optional
+- [ASM Code Lens](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens) for syntax highlighting, completions and more.
+- [x86 Instruction Reference](https://marketplace.visualstudio.com/items?itemName=whiteout2.x86) for useful information about x86 instructions
+
+## Supported architectures
+The default tasks.json file allows you to assemble x86_32 asm files, but you can edit the shell command to assemble and link for any architecture you want. 
