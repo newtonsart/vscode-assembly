@@ -1,0 +1,12 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "assemble",
+            "type": "shell",
+            "command": "clear; echo '\n'; rawfilename=${workspaceRoot}/${fileBasenameNoExtension}; nasm -F dwarf -g -f elf32 -o $rawfilename.o ${file}; echo ${file} 'assembled\n'; ld -m elf_i386 -o $rawfilename $rawfilename.o; echo $rawfilename.o 'linked\n'",
+        }
+    ]
+}
