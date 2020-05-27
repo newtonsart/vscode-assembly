@@ -1,4 +1,4 @@
-# visual-studio-assembly
+# vscode-assembly
 [![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)](https://github.com/newtonsart/visual-studio-assembly/blob/master/CONTRIBUTING.md)&nbsp;
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -12,7 +12,7 @@ Currently it supports:
 
 ## Demo
 
-![Running](https://raw.githubusercontent.com/newtonsart/visual-studio-assembly/master/vscode.png)
+![Running](https://raw.githubusercontent.com/newtonsart/vscode-assembly/master/vscode.png)
 
 ## Installing
 
@@ -40,7 +40,7 @@ Press ``ctrl + p`` inside of visual studio code and paste the following command:
 ext install DamianKoper.gdb-debug
 ```
 ### Json files
-You'll need to put the [.vscode](https://github.com/newtonsart/visual-studio-assembly/tree/master/.vscode) folder in your visual studio workspace
+You'll need to put the [.vscode](https://github.com/newtonsart/vscode-assembly/tree/master/.vscode) folder in your visual studio workspace
 
 ### Optional
 - [ASM Code Lens](https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens) for syntax highlighting, completions and more.
@@ -48,5 +48,5 @@ You'll need to put the [.vscode](https://github.com/newtonsart/visual-studio-ass
 
 ## License
 
-Visual-Studio-Assembly is licensed under the GNU General Public License v3.0
+vscode-assembly is licensed under the GNU General Public License v3.0
 
