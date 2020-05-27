@@ -1,0 +1,85 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+          "label": "asm32",
+          "type": "shell",
+          "command": "rawfilename=${workspaceRoot}/${fileBasenameNoExtension}; nasm -F dwarf -g -f elf32 -o $rawfilename.o ${file}; ld -m elf_i386 -o $rawfilename $rawfilename.o;",
+          "problemMatcher": {
+              "pattern": {
+                "regexp": "error"
+              }
+            },
+          "presentation": {
+              "focus": true,
+              "panel": "dedicated",
+              "reveal": "silent",
+              "clear": true
+          }
+        },
+        {
+          "label": "asm64",
+          "type": "shell",
+          "command": "rawfilename=${workspaceRoot}/${fileBasenameNoExtension}; nasm -F dwarf -g -f elf64 -o $rawfilename.o ${file}; ld -m elf_x86_64 -o $rawfilename $rawfilename.o;",
+          "problemMatcher": {
+              "pattern": {
+                "regexp": "error"
+              }
+            },
+          "presentation": {
+              "focus": true,
+              "panel": "dedicated",
+              "reveal": "silent",
+              "clear": true
+          }
+        },
+        {
+          "label": "gas",
+          "type": "shell",
+          "command": "rawfilename=${workspaceRoot}/${fileBasenameNoExtension}; as ${file} -o $rawfilename.o; ld $rawfilename.o -o $rawfilename",
+          "problemMatcher": {
+              "pattern": {
+                "regexp": "error"
+              }
+            },
+          "presentation": {
+              "focus": true,
+              "panel": "dedicated",
+              "reveal": "silent",
+              "clear": true
+          }
+        },
+        {
+          "label": "asm64+gcc",
+          "type": "shell",
+          "command": "rawfilename=${workspaceRoot}/${fileBasenameNoExtension}; nasm -F dwarf -g -f elf64 -o $rawfilename.o ${file}; gcc -m64 -o $rawfilename $rawfilename.o;",
+          "problemMatcher": {
+              "pattern": {
+                "regexp": "error"
+              }
+            },
+          "presentation": {
+              "focus": true,
+              "panel": "dedicated",
+              "reveal": "silent",
+              "clear": true
+          }
+        },
+        {
+          "label": "asm32+gcc",
+          "type": "shell",
+          "command": "rawfilename=${workspaceRoot}/${fileBasenameNoExtension}; nasm -F dwarf -g -f elf32 -o $rawfilename.o ${file}; gcc -m32 -o $rawfilename $rawfilename.o;",
+          "problemMatcher": {
+              "pattern": {
+                "regexp": "error"
+              }
+            },
+          "presentation": {
+              "focus": true,
+              "panel": "dedicated",
+              "reveal": "silent",
+              "clear": true
+          }
+        }
+    ]
+}
