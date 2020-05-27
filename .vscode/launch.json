@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GDB32",
+            "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+            "stopOnEntry": false,
+            "preLaunchTask": "asm32"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GDB64",
+            "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+            "stopOnEntry": false,
+            "preLaunchTask": "asm64"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GAS",
+            "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+            "stopOnEntry": false,
+            "preLaunchTask": "gas"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GDB32+GCC",
+            "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+            "stopOnEntry": false,
+            "preLaunchTask": "asm32+gcc"
+        },
+        {
+            "type": "gdb",
+            "request": "launch",
+            "name": "GDB64+GCC",
+            "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+            "stopOnEntry": false,
+            "preLaunchTask": "asm64+gcc"
+        }
+    ]
+}
