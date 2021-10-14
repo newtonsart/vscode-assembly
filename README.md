@@ -18,7 +18,7 @@ Currently it supports:
 
 ### Visual Studio Code
 I guess you already have this installed...
-If not, go [here](https://visualstudio.microsoft.com/downloads/)
+If not, go [here](https://code.visualstudio.com/)
 ### GDB
 Install your distro gdb package:
 
