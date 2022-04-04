@@ -36,7 +36,7 @@
         {
           "label": "gas",
           "type": "shell",
-          "command": "rawfilename=${fileDirname}/${fileBasenameNoExtension}; as --gstabs+ ${file} -o $rawfilename.o; ld $rawfilename.o -o $rawfilename",
+          "command": "rawfilename=${fileDirname}/${fileBasenameNoExtension}; as --32 --gstabs+ ${file} -o $rawfilename.o; ld -m elf_i386 $rawfilename.o -o $rawfilename",
           "problemMatcher": {
               "pattern": {
                 "regexp": "error"
